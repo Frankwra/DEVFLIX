@@ -1,0 +1,178 @@
+:root{
+  --vermelho: #e50914;
+  --preto: #141414;
+}
+
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body{
+  background: var(--preto);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+h1, header .logo{
+  margin-left: 10px;
+  color: var(--vermelho);
+  font-family: 'Arial Black', Times;
+  font-size: 50px;
+}
+
+h3, header nav a{
+  text-decoration: none;
+  color: #AAA;
+  margin-right: 10px;  
+  font-size: 18px;
+}
+.box-aula{
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+
+/* hover - passar mouse em cima muda a cor da letra */
+header nav a:hover{
+  color: #fff;
+}
+
+.principal{
+  background: url("../img/home.jpg");
+  height: 500px;
+  background-size: cover;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  
+}
+
+.carrocel{
+  margin-top: 5px;
+}
+
+h1 .rodape{
+  
+  
+}
+
+
+
+/*-----BOTÃO COMEÇAR------*/
+
+.comecar{
+  margin-top: 10rem;
+  margin-left: 4rem;
+
+  position: relative;
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  color: #e4105d;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 1rem;
+  overflow: hidden;
+  transition: 0.2s;  
+  color: #e4105d; 
+  border-radius: 0.3rem; 
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Arial Black';
+ 
+}
+
+
+
+
+/* --------- BOTÃO TIPO LED.-----------*/
+
+.comecar:hover{
+  color: white;
+  background: #e4105d;
+  box-shadow: 0 0 10px #e4105d, 0 0 40px #e4105d, 0 0 80px #e4105d;
+  transition-delay: 1.25s;
+  
+}
+
+
+a span{
+  position: absolute;
+  display: block;
+  
+}
+
+
+a span:nth-child(1){
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #e4105d);
+
+}
+a:hover span:nth-child(1){
+  left: 100%;
+  transition: 1s;
+}
+
+
+a span:nth-child(3){
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #e4105d);
+
+}
+a:hover span:nth-child(3){
+  right: 100%;
+  transition: 2s;
+  transition-delay: 0.5s;
+}
+
+
+a span:nth-child(2){
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #e4105d);
+
+}
+a:hover span:nth-child(2){
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+
+a span:nth-child(4){
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #e4105d);
+
+}
+a:hover span:nth-child(4){
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 1s;
+}
+
+
+
+
